@@ -8,6 +8,6 @@ int main()
 
     for(int i = 0; i <= 10; i++)
     {
-        cout << n << " * " << i << " = " << n * i << endl;
+        cout << n << " * " << i << " = " << n * i << endl;  // imprime o produto de n por i
     }
 }

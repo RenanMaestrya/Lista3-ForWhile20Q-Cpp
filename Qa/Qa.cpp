@@ -6,7 +6,6 @@ int main()
   int i = 15;
   while(i <= 200){
     cout << i << "\n";
-    
     i++;
   }
 };

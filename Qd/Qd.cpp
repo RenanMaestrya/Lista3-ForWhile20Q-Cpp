@@ -10,8 +10,8 @@ int main()
             }else{
                 cout << i << " = ";
             };
-            soma = soma + i;
+            soma = soma + i;    
         };
     };
-    cout << soma ;
+    cout << soma ;  // imprime a soma de todos os números pares de 1 a 500
 }
