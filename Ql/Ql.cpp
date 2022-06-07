@@ -4,21 +4,28 @@ using namespace std;
 
 int main()
 {
-    double n, aux = 3, temp;
-    double f1 = 0;
-    double f2 = 1;
+    double n, i;
+    long int temp = 1;
+    double soma = 0, fat, total = 0;
+  
+    int term = 1; 
 
-    cout << f1 << endl; // 0 ->  primeiro termo
+    cout << ">>> Press 15 numbers to the factorial calc <<<" << endl;
 
-    while(aux <= 15){
-        cout << (f1 + f2) << endl;     // f1 + f2 -> segundo termo
-
-        temp = f2;            // temporario recebe f2
-        f2 = f1;             // f2 recebe f1
-        f1 = f1 + temp;     // f1 recebe f1 + temporario
-
-        aux++;            
+    while(term <= 15){
+      cout << "Press a number: ";
+      cin >> n;
+      temp = 1;
+      for(i = n; i >= 1; i--){
+        temp = temp * i;
+        
+      }
+      cout << temp << endl;
+      total = temp + total;
+      
+      term++;
     }
+    cout << "Fatorial calc total = " << total << endl;
 
     return 0;
 }
