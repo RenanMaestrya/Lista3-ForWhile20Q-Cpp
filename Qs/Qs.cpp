@@ -5,27 +5,44 @@ int main()
 {
     int dv = 1;
     int d = 1;
-    int q;
-    int continua;
+    bool continua = true;
+    int cont;
 
 
 
-    while(dv >= d){
-        
+    while(continua == true){
+        int q = 1;
         cout << "Enter with the dividend: ";
         cin >> dv;
             
         cout << "Enter with the divisor: ";
         cin >> d;
 
-        q = dv / d;
-        cout << "There are " << q << " divisors in the dividend" << endl;
+        while((q*d) < dv){
+            
+            q++;
 
-        cout << "continue? (1 = yes, 0 = no) ";
-        cin >> continua;
-        if(continua == 0){
-            break;
         }
+        
+        cout << "There are " << q << " divisors in the dividend" << endl;
+        
+        cout << "continue? (1 = yes, 0 = no) ";
+        cin >> cont;
+        while(cont != 0 && cont != 1){
+            cout << "Invalid option" << endl;
+            cout << "continue? (1 = yes, 0 = no) ";
+            cin >> cont;
+            if (cont == 0 || cont == 1){
+                cont = cont;
+            }
+        }
+
+        if(cont == 0){
+            continua = false;
+        }else if(cont == 1){
+            continua = true;
+        }
+        
     }
     return 0;
 }
