@@ -17,15 +17,15 @@ int main()
       cin >> n;
       temp = 1;
       for(i = n; i >= 1; i--){
-        temp = temp * i;
+        temp = temp * i; //fatorial calc
         
       }
       cout << temp << endl;
-      total = temp + total;
+      total = temp + total; //sum of factorials
       
       term++;
     }
-    cout << "Fatorial calc total = " << total << endl;
+    cout << "Factorial calc total = " << total << endl;
 
     return 0;
 }
